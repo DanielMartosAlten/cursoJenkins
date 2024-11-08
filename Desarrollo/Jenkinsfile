@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('UAT') {
             steps {
-                echo 'Hola que tal como te va'
+                bat 'java -version'
+                bat 'git --version'
             }
         }
     }
